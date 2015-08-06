@@ -35,6 +35,22 @@ My favorite is [Stylus][], but use what you feel most comfortable with. The snip
 [Sass]: http://sass-lang.com/
 [Less]: http://lesscss.org/
 
+### Use `box-sizing border-box`
+
+The `box-sizing border-box` property is [supported all the way back to IE8][box-sizing] so there's really no reason not to use it. It will _gretaly_ simplify your life authoring CSS.
+
+For anyone not familiar `box-sizing border-box` basically makes the CSS box model actually reasonable. When you set `width 300px` that's what you get. Borders and padding will push the content of the element inward instead of increasing the effective width of the element outward.
+
+Still curious? [Read this](http://www.paulirish.com/2012/box-sizing-border-box-ftw/).
+
+Then add this to the beginning of all your style files:
+
+```css
+* { box-sizing: border-box; }
+```
+
+[box-sizing]: http://caniuse.com/#feat=css3-boxsizing
+
 ## Layout
 
 CSS layout, if anything, is often the most vexing part of creating CSS. For that reason most of the idioms to follow revolve around achieving some layout.
