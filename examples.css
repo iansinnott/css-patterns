@@ -1,0 +1,9 @@
+/***************************************************************************
+ * Vertical Align Center
+ * *************************************************************************/
+.vertical-center-container {
+  position: relative;
+}
+.vetical-align {
+  position: absolute;
+}

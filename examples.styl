@@ -1,0 +1,66 @@
+/*!**************************************************************************
+ * Vertical Align Center
+ ***************************************************************************/
+
+ // The containing element needs to have absolute positioning of course
+ .container
+  position relative
+
+// Using position absolute we can move the _top_ of the element down by 50%.
+// Then by translating the element up (using a negative percentate)
+.vetical-align
+  position absolute
+  top 50%
+  transform translateY(-50%)
+
+// Using a table is a bit more tricky, but its supported in terrible browsers
+.container
+  display table
+
+.vertical-align
+  display table-cell
+  vertical-align middle
+
+// The reason this method can be tricky is that now you are locked in to
+// using table styling on these elements, which can be confusing and
+// unintuitive.
+
+/*!**************************************************************************
+ * Horizontal Align Center
+ ***************************************************************************/
+
+ // Using margins (fixed width)
+
+ // Using tac (variable width)
+
+/*!**************************************************************************
+ * Absolute Center
+ ***************************************************************************/
+
+/*!**************************************************************************
+ * Arbitrary Width/Height Border
+ ***************************************************************************/
+
+ // pseudo elements + content '' + posr
+
+/*!**************************************************************************
+ * Justified Columns
+ ***************************************************************************/
+
+ // pseudo elements (or invisible div) + taj
+ // Be aware of the need for an _actual_ space in HTML code
+
+/*!**************************************************************************
+ * Pull Right
+ ***************************************************************************/
+
+.pull-right
+  margin-right 0
+  margin-left auto
+
+/*!**************************************************************************
+ * Full width section within fixed width container
+ ***************************************************************************/
+
+ // Actually forgot how to do this one... That's what this doc is going to be
+ // for :D
